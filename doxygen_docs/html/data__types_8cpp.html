@@ -25,6 +25,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="c-.png"/></td>
   <td id="projectalign">
    <div id="projectname">Learning Cpp
    </div>
@@ -85,9 +86,11 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 </div><!--header-->
 <div class="contents">
 
-<p>code to learn the data types in C++  
+<p>Learning the data types in C++.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for data_types.cpp:</div>
 <div class="dyncontent">
@@ -102,7 +105,7 @@ Functions</h2></td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>code to learn the data types in C++ </p>
+<div class="textblock"><p>Learning the data types in C++. </p>
 <dl class="section author"><dt>Author</dt><dd>Nemo </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>7th-July </dd></dl>
 
@@ -122,15 +125,38 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Printing a sample print statment. std name space used for cout</p>
 
-<p class="definition">Definition at line <a class="el" href="data__types_8cpp_source.html#l00009">9</a> of file <a class="el" href="data__types_8cpp_source.html">data_types.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    9</span>          {</div>
-<div class="line"><span class="lineno">   10</span> </div>
-<div class="line"><span class="lineno">   12</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;Hello World!\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   13</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;This is the second line&quot;</span>&lt;&lt;std::endl;</div>
-<div class="line"><span class="lineno">   14</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   15</span>}</div>
+<p class="definition">Definition at line <a class="el" href="data__types_8cpp_source.html#l00011">11</a> of file <a class="el" href="data__types_8cpp_source.html">data_types.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   11</span>          {</div>
+<div class="line"><span class="lineno">   12</span> </div>
+<div class="line"><span class="lineno">   13</span>    <span class="comment">// Declaring variables to store information of a person</span></div>
+<div class="line"><span class="lineno">   14</span>    <span class="keywordtype">int</span>     age;</div>
+<div class="line"><span class="lineno">   15</span>    <span class="keywordtype">float</span>   weight, height;</div>
+<div class="line"><span class="lineno">   16</span>    <span class="keywordtype">double</span>  pi;</div>
+<div class="line"><span class="lineno">   17</span>    <span class="keywordtype">char</span>    name[10];</div>
+<div class="line"><span class="lineno">   18</span>    <span class="keywordtype">bool</span>    isTrue;</div>
+<div class="line"><span class="lineno">   19</span> </div>
+<div class="line"><span class="lineno">   20</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;Hello World!\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   21</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;This is the second line&quot;</span>&lt;&lt;std::endl;</div>
+<div class="line"><span class="lineno">   22</span> </div>
+<div class="line"><span class="lineno">   23</span>    age     = 1;</div>
+<div class="line"><span class="lineno">   24</span>    weight  = 67.88888888888888888;</div>
+<div class="line"><span class="lineno">   25</span>    pi      = 3.24259267849204583409580945830;</div>
+<div class="line"><span class="lineno">   26</span>    std::strcpy(name, <span class="stringliteral">&quot;Nemo&quot;</span>);</div>
+<div class="line"><span class="lineno">   27</span>    isTrue = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>    std::cout&lt;&lt;age&lt;&lt;std::endl;</div>
+<div class="line"><span class="lineno">   30</span>    std::cout&lt;&lt;weight&lt;&lt;std::endl;</div>
+<div class="line"><span class="lineno">   31</span>    std::cout&lt;&lt;pi&lt;&lt;std::endl;</div>
+<div class="line"><span class="lineno">   32</span>    std::cout&lt;&lt;name&lt;&lt;std::endl;</div>
+<div class="line"><span class="lineno">   33</span> </div>
+<div class="line"><span class="lineno">   34</span>    std::cout&lt;&lt;std::setprecision(30)&lt;&lt;weight&lt;&lt;std::endl;</div>
+<div class="line"><span class="lineno">   35</span>    std::cout&lt;&lt;std::setprecision(20)&lt;&lt;pi&lt;&lt;std::endl;</div>
+<div class="line"><span class="lineno">   36</span>    std::cout&lt;&lt;isTrue&lt;&lt;std::endl;</div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span> </div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   40</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
