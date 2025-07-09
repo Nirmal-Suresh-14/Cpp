@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data_5ftypes_2ecpp_0',['data_types.cpp',['../data__types_8cpp.html',1,'']]]
+  ['book_0',['book',['../classBook.html',1,'Book'],['../classBook.html#a2eac9e235a08763158f78533f7a83e1f',1,'Book::Book()'],['../classBook.html#a2c7da88b559b521698a7c2fffe182cb1',1,'Book::Book(std::string t, std::string a, int p)']]]
 ];

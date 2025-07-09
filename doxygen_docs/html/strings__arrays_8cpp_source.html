@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Learning Cpp: basics/functions.cpp Source File</title>
+<title>Learning Cpp: basics/strings_arrays.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,37 +80,32 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="headertitle"><div class="title">functions.cpp</div></div>
+  <div class="headertitle"><div class="title">strings_arrays.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="functions_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<a href="strings__arrays_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">double</span> <a class="code hl_function" href="functions_8cpp.html#a5a42d4e2acce0d21e6436f5b503f5e15">multiplyNumbers</a>(<span class="keywordtype">double</span> a, <span class="keywordtype">double</span> b);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">int</span> <a class="code hl_function" href="class__objects_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(){</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">double</span> a, b, c;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;Enter two numbers: \n&quot;</span>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    std::cin&gt;&gt; a &gt;&gt; b;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    c = <a class="code hl_function" href="functions_8cpp.html#a5a42d4e2acce0d21e6436f5b503f5e15">multiplyNumbers</a>(a, b);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    std::cout&lt;&lt;<span class="stringliteral">&quot;Their product is: &quot;</span>&lt;&lt;c&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keywordtype">int</span> <a class="code hl_function" href="class__objects_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(){</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">// Declaring varaiables</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    std::string     name;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter your name:&quot;</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    std::getline(std::cin, name);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Your name is: &quot;</span> &lt;&lt; name &lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="comment">// Adding Second name to the string</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    name += <span class="stringliteral">&quot; Suresh&quot;</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Your full name is: &quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="functions_8cpp.html#a5a42d4e2acce0d21e6436f5b503f5e15">   33</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="functions_8cpp.html#a5a42d4e2acce0d21e6436f5b503f5e15">multiplyNumbers</a>(<span class="keywordtype">double</span> a, <span class="keywordtype">double</span> b){</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> a*b;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
-</div>
 <div class="ttc" id="aclass__objects_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="class__objects_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main function to demonstrate Book class functionality.</div><div class="ttdef"><b>Definition</b> <a href="class__objects_8cpp_source.html#l00062">class_objects.cpp:62</a></div></div>
-<div class="ttc" id="afunctions_8cpp_html_a5a42d4e2acce0d21e6436f5b503f5e15"><div class="ttname"><a href="functions_8cpp.html#a5a42d4e2acce0d21e6436f5b503f5e15">multiplyNumbers</a></div><div class="ttdeci">double multiplyNumbers(double a, double b)</div><div class="ttdoc">Multiplies two numbers.</div><div class="ttdef"><b>Definition</b> <a href="functions_8cpp_source.html#l00033">functions.cpp:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,5 +1,5 @@
 /**
- * @file string_arrays.cpp
+ * @file strings_arrays.cpp
  * @brief Learning the strings and arrays in C++
  * @author Nemo
  * @date 8th-July
